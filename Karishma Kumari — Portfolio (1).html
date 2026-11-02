@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Karishma Kumari — Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#09090a;--s1:#101012;--s2:#17171a;--ln:rgba(255,255,255,.08);--ln2:rgba(255,255,255,.16);--tx:#ededee;--mut:#8b8b92;--dim:#5a5a61;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{background:var(--bg);scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--tx);font:16px/1.65 Inter,system-ui,sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.w{max-width:1180px;margin:0 auto;padding:0 24px}
+.mono{font:400 12px/1.4 'JetBrains Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+h1,h2,h3{font-family:'Inter Tight',sans-serif;font-weight:600;letter-spacing:-.045em;line-height:.95}
+.met{background:linear-gradient(180deg,#fff 10%,#9a9aa2 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:30;border-bottom:1px solid var(--ln);background:rgba(9,9,10,.7);backdrop-filter:blur(14px)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:62px}
+.lg{font:600 17px 'Inter Tight';letter-spacing:-.02em}.lg i{font-style:normal;color:var(--dim)}
+nav ul{display:flex;gap:30px;list-style:none;font-size:14px;color:var(--mut)}
+nav ul a:hover{color:var(--tx)}
+.nb{font-size:13px;padding:8px 16px;border:1px solid var(--ln2);border-radius:99px;transition:.25s}.nb:hover{background:var(--tx);color:#09090a}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:120px 0 70px;border-bottom:1px solid var(--ln);overflow:hidden}
+#cv{position:absolute;inset:0;width:100%;height:100%}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 30% 100%,rgba(9,9,10,.9),transparent 70%);pointer-events:none}
+.hero .w{position:relative;z-index:2;width:100%}
+.av{display:inline-flex;gap:10px;align-items:center;border:1px solid var(--ln2);border-radius:99px;padding:7px 14px;background:rgba(16,16,18,.7)}
+.av i{width:7px;height:7px;border-radius:50%;background:#d8d8dc;animation:bl 2.4s infinite}
+@keyframes bl{50%{opacity:.25}}
+h1{font-size:clamp(52px,11.5vw,168px);margin:28px 0 28px}
+.hp{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.hp p{max-width:470px;color:var(--mut);font-size:17px}.hp p b{color:var(--tx);font-weight:500}
+.bt{display:flex;gap:10px;flex-wrap:wrap}
+.b{padding:13px 24px;border-radius:99px;font-size:14px;font-weight:500;border:1px solid var(--ln2);transition:.25s;display:inline-block}
+.b:hover{border-color:var(--tx);transform:translateY(-2px)}
+.b.f{background:var(--tx);color:#09090a;border-color:var(--tx)}.b.f:hover{background:#fff;box-shadow:0 8px 40px rgba(255,255,255,.18)}
+.st{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--ln)}
+.st div{padding:34px 24px;border-right:1px solid var(--ln)}.st div:first-child{border-left:1px solid var(--ln)}
+.st b{display:block;font:600 clamp(34px,5vw,56px)/1 'Inter Tight';letter-spacing:-.04em}.st span{color:var(--mut);font-size:13px}
+section{padding:130px 0 0}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:56px;flex-wrap:wrap}
+h2{font-size:clamp(40px,6.5vw,88px)}
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:56px;color:var(--mut);font-size:18px;line-height:1.7}
+.ab b{color:var(--tx);font-weight:500}.ab p+p{margin-top:18px}
+.hl{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--ln);border:1px solid var(--ln);border-radius:18px;overflow:hidden}
+.card{position:relative;background:var(--s1);padding:30px;overflow:hidden}
+.card:before{content:"";position:absolute;inset:0;background:radial-gradient(340px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.07),transparent 65%);opacity:0;transition:.3s;pointer-events:none}
+.card:hover:before{opacity:1}
+.hl h3{font-size:22px;margin:14px 0 8px;line-height:1.1}.hl p{color:var(--mut);font-size:14.5px}
+.pcs{padding-bottom:20px}
+.pc{position:sticky;top:calc(84px + var(--i)*18px);display:grid;grid-template-columns:1.05fr 1fr;min-height:430px;margin-bottom:30px;border:1px solid var(--ln2);border-radius:22px;background:var(--s1);overflow:hidden;box-shadow:0 -24px 60px rgba(0,0,0,.6)}
+.pcl{padding:40px;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+.pcl h3{font-size:clamp(38px,5vw,64px);margin:14px 0 16px}
+.pcl p{color:var(--mut);font-size:15.5px}
+.tg{display:flex;flex-wrap:wrap;gap:7px}.tg span{font:400 11.5px 'JetBrains Mono';padding:5px 11px;border:1px solid var(--ln);border-radius:99px;color:#b4b4bb;background:var(--s2)}
+.lk{display:flex;gap:22px;font-size:14px;font-weight:500}.lk a{border-bottom:1px solid var(--dim);padding-bottom:2px;transition:.2s}.lk a:hover{border-color:var(--tx)}
+.pcv{position:relative;background:#0c0c0e;border-left:1px solid var(--ln);display:flex;align-items:center;justify-content:center;padding:30px}
+.pcv:before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--ln) 1px,transparent 1px),linear-gradient(90deg,var(--ln) 1px,transparent 1px);background-size:36px 36px;mask-image:radial-gradient(circle,#000 30%,transparent 78%)}
+.pcv svg{position:relative;width:100%;max-width:440px;height:auto;overflow:visible;transition:transform .6s}
+.pc:hover .pcv svg{transform:scale(1.05) rotate(-1.5deg)}
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--ln);border:1px solid var(--ln);border-radius:18px;overflow:hidden}
+.sg h3{font:500 12px 'JetBrains Mono';letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:18px;line-height:1.4}
+.sg ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.sg li{font-size:14px;padding:6px 13px;border:1px solid var(--ln);border-radius:99px;color:#cfcfd4;transition:.2s}
+.sg li:hover{background:var(--tx);color:#09090a;border-color:var(--tx)}
+.jr{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.jr .card{border:1px solid var(--ln);border-radius:18px}
+.jr h3{font-size:28px;margin:12px 0 4px;line-height:1.05}.jr .o{color:var(--mut);font-size:14px}
+.jr ul{margin:18px 0 0 18px;color:#b4b4bb;font-size:14.5px}
+.ac{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--ln);border:1px solid var(--ln);border-radius:18px;overflow:hidden;margin-top:20px}
+.ac a.card{display:block;padding:26px}.ac h3{font-size:22px;display:flex;justify-content:space-between}.ac p{color:var(--mut);font-size:13.5px;margin-top:10px}
+.ac a:hover h3 span{transform:translate(3px,-3px)}.ac h3 span{transition:.2s;color:var(--dim)}
+.ct{text-align:center;padding:120px 24px;margin-top:130px;border-block:1px solid var(--ln);background:radial-gradient(ellipse at 50% 0%,rgba(255,255,255,.07),transparent 65%)}
+.ct h2{font-size:clamp(44px,8vw,120px);margin:18px 0 30px}
+.mail{display:inline-block;font:500 clamp(18px,3.4vw,34px) 'Inter Tight';letter-spacing:-.02em;border-bottom:1px solid var(--dim);padding-bottom:6px;transition:.25s;word-break:break-all}.mail:hover{border-color:var(--tx);color:#fff}
+.ct .bt{justify-content:center;margin-top:40px}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:32px 24px}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}.rv.on{opacity:1;transform:none}
+@media(max-width:860px){nav ul{display:none}.ab,.jr{grid-template-columns:1fr}.hl,.sg,.ac{grid-template-columns:1fr}.st{grid-template-columns:1fr 1fr}.st div:nth-child(2n){border-right:0}.st div{border-bottom:1px solid var(--ln)}section{padding-top:90px}.pc{position:relative;top:0;grid-template-columns:1fr}.pcv{border-left:0;border-top:1px solid var(--ln);min-height:240px}.pcl{padding:28px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav><div class="w"><a class="lg" href="#top">Karishma<i>.K</i></a><ul><li><a href="#about">About</a></li><li><a href="#work">Projects</a></li><li><a href="#stack">Stack</a></li><li><a href="#journey">Journey</a></li></ul><a class="nb" href="#contact">Get in touch</a></div></nav>
+
+<header class="hero" id="top"><canvas id="cv"></canvas>
+<div class="w"><span class="av mono"><i></i>Available for opportunities</span>
+<h1 class="met">Karishma<br>Kumari.</h1>
+<div class="hp"><p><b>Full-stack developer</b> building complete, dependable products, from React frontends to real-time backends, payments and AI tooling.</p>
+<div class="bt"><a class="b f" href="#work">View projects</a><a class="b" href="https://github.com/karishma9142" target="_blank" rel="noopener">GitHub ↗</a><a class="b" href="https://www.linkedin.com/in/karishma-kumari-4778b7336/" target="_blank" rel="noopener">LinkedIn ↗</a></div></div></div></header>
+
+<div class="st"><div class="rv"><b data-n="1000" data-s="+">0</b><span>DSA problems solved</span></div><div class="rv"><b data-n="6">0</b><span>Projects shipped</span></div><div class="rv"><b data-n="8.9" data-d="1">0</b><span>CGPA</span></div><div class="rv"><b>#6</b><span>College rank on GeeksforGeeks</span></div></div>
+
+<main>
+<section id="about"><div class="w">
+<div class="sh rv"><h2 class="met">About</h2><span class="mono">01 / Profile</span></div>
+<div class="ab rv"><div><p>I’m a <b>Computer Science undergraduate</b> from Bhopal who builds and ships complete products: React and TypeScript frontends, Node.js backends, real-time systems, payments with Razorpay and Stripe, and JWT-based security.</p></div>
+<div><p>I’m hands-on with <b>microservices, Docker and GitHub Actions CI/CD</b>, and I work with AI tooling like Whisper, Llama and LLM-as-judge evaluation. I’m looking for a developer role where I can build reliable, scalable products end to end.</p></div></div>
+<div class="hl rv"><div class="card"><span class="mono">Frontend</span><h3>Frontend craft</h3><p>React, TypeScript and Tailwind interfaces.</p></div><div class="card"><span class="mono">Backend</span><h3>Backends &amp; real-time</h3><p>Node.js, microservices, WebSocket, RabbitMQ.</p></div><div class="card"><span class="mono">Delivery</span><h3>DevOps ready</h3><p>Docker, GitHub Actions CI/CD, AWS basics.</p></div></div>
+</div></section>
+
+<section id="work"><div class="w">
+<div class="sh rv"><h2 class="met">Selected work</h2><span class="mono">02 / Projects</span></div>
+<div class="pcs" id="pcs"></div>
+</div></section>
+
+<section id="stack"><div class="w">
+<div class="sh rv"><h2 class="met">Tech stack</h2><span class="mono">03 / Toolkit</span></div>
+<div class="sg rv" id="sg"></div>
+</div></section>
+
+<section id="journey"><div class="w">
+<div class="sh rv"><h2 class="met">Journey</h2><span class="mono">04 / Experience</span></div>
+<div class="jr rv">
+<div class="card"><span class="mono">Nov 2025 — Jan 2026</span><h3>Web Developer Intern</h3><div class="o">Orange Essence Technologies · Remote</div><ul><li>Built features with React.js and Node.js across frontend and backend.</li><li>Tested APIs with Postman, verified data with SQL and managed storage in MongoDB.</li></ul></div>
+<div class="card"><span class="mono">Apr 2024 — May 2028</span><h3>B.Tech, Computer Science</h3><div class="o">IES University Bhopal</div><ul><li>CGPA 8.9, focused on software engineering, systems and algorithms.</li><li>GeeksforGeeks Global Rank 5750, College Rank 6.</li></ul></div></div>
+<div class="ac rv" id="ac"></div>
+</div></section>
+
+<div class="ct" id="contact"><span class="mono rv">05 / Contact</span><h2 class="met rv">Let’s work together.</h2>
+<a class="mail rv" href="mailto:karishma914212@gmail.com">karishma914212@gmail.com</a>
+<div class="bt rv"><a class="b f" href="mailto:karishma914212@gmail.com">Send an email</a><a class="b" href="https://www.linkedin.com/in/karishma-kumari-4778b7336/" target="_blank" rel="noopener">LinkedIn ↗</a><a class="b" href="https://github.com/karishma9142" target="_blank" rel="noopener">GitHub ↗</a></div>
+<p class="mono rv" style="margin-top:36px">+91 9142129016 · Bhopal, Madhya Pradesh, India</p></div>
+</main>
+<footer class="mono"><span>© 2026 Karishma Kumari</span><span>Full-Stack Developer</span></footer>
+
+<script>
+var $=function(i){return document.getElementById(i)};
+function vis(k){var s='',i,h;
+if(k==0){for(i=0;i<14;i++){h=30+Math.abs(Math.sin(i*1.3))*70;var y=130+Math.cos(i*.9)*40-i*4,up=i%3!=0;s+='<line x1="'+(20+i*28)+'" x2="'+(20+i*28)+'" y1="'+(y-h/2-12)+'" y2="'+(y+h/2+12)+'" stroke="#6a6a72"/><rect x="'+(13+i*28)+'" y="'+(y-h/2)+'" width="14" height="'+h+'" rx="2" fill="'+(up?'#ededee':'#17171a')+'" stroke="#8b8b92"/>'}}
+if(k==1){for(i=1;i<5;i++)s+='<circle cx="200" cy="150" r="'+i*32+'" fill="none" stroke="#3a3a40" stroke-dasharray="'+(i%2?'0':'4 6')+'"/>';s+='<path d="M60 230 C130 200 150 120 200 150 S300 70 350 60" fill="none" stroke="#ededee" stroke-width="2" stroke-dasharray="6 6"/><circle cx="60" cy="230" r="8" fill="#ededee"/><circle cx="200" cy="150" r="12" fill="#09090a" stroke="#ededee" stroke-width="2"/><circle cx="350" cy="60" r="8" fill="#8b8b92"/>'}
+if(k==2){for(i=0;i<8;i++){h=40+i*22;s+='<rect x="'+(30+i*43)+'" y="'+(250-h)+'" width="28" height="'+h+'" rx="3" fill="'+(i>4?'#ededee':'#26262a')+'" stroke="#6a6a72"/>'}s+='<path d="M30 200 L120 170 L200 140 L290 90 L372 50" fill="none" stroke="#8b8b92" stroke-dasharray="4 5"/><text x="30" y="285" fill="#8b8b92" font-family="JetBrains Mono" font-size="12">pass rate  ▲ 50+ tests</text>'}
+if(k==3){for(i=0;i<26;i++){h=12+Math.abs(Math.sin(i*.7)*Math.cos(i*.25))*150;s+='<rect x="'+(18+i*14)+'" y="'+(150-h/2)+'" width="7" height="'+h+'" rx="3.5" fill="'+(i>16?'#4a4a52':'#ededee')+'"/>'}s+='<rect x="30" y="250" width="150" height="10" rx="5" fill="#26262a"/><rect x="30" y="250" width="95" height="10" rx="5" fill="#8b8b92"/>'}
+if(k==4){for(i=0;i<6;i++){var cx=22+(i%3)*128,cy=30+Math.floor(i/3)*120;s+='<rect x="'+cx+'" y="'+cy+'" width="116" height="106" rx="10" fill="#131316" stroke="'+(i==1?'#ededee':'#3a3a40')+'"/><circle cx="'+(cx+58)+'" cy="'+(cy+44)+'" r="16" fill="#26262a"/><path d="M'+(cx+30)+' '+(cy+90)+' q28 -30 56 0" fill="#26262a"/>'}s+='<rect x="140" y="262" width="120" height="26" rx="13" fill="#ededee"/>'}
+if(k==5){s+='<rect x="20" y="30" width="210" height="52" rx="16" fill="#17171a" stroke="#4a4a52"/><rect x="40" y="50" width="120" height="8" rx="4" fill="#6a6a72"/><rect x="170" y="110" width="210" height="52" rx="16" fill="#ededee"/><rect x="190" y="130" width="130" height="8" rx="4" fill="#4a4a52"/><rect x="20" y="190" width="170" height="52" rx="16" fill="#17171a" stroke="#4a4a52"/><rect x="40" y="210" width="90" height="8" rx="4" fill="#6a6a72"/><circle cx="340" cy="262" r="5" fill="#8b8b92"/><circle cx="322" cy="262" r="5" fill="#5a5a61"/><circle cx="304" cy="262" r="5" fill="#3a3a40"/>'}
+return '<svg viewBox="0 0 400 300">'+s+'</svg>'}
+var P=[["NexTrade","Crypto exchange","Cryptocurrency exchange with a real-time order-matching engine, live candlestick charts and REST APIs for order book, trades and ticker. Signature-verified Razorpay wallet credits, KYC uploads with admin review and JWT role-based access.",["React","Node.js","MongoDB","Redis","WebSocket","Razorpay"],"https://github.com/karishma9142/cex-backend-2","https://cex-frontend-2.vercel.app/"],
+["Cravio","Food delivery platform","Zomato-inspired multi-vendor platform for customers, restaurants and riders, built as Dockerized microservices with location-based rider discovery, live updates, Razorpay and Stripe payments.",["React","TypeScript","Socket.IO","RabbitMQ","Docker"],"https://github.com/karishma9142/cravio-frontend","https://cravio-frontend.vercel.app/"],
+["EvalBoard","AI evaluation platform","Self-hosted platform to test AI models against CSV test suites with an LLM-as-judge grader, regression comparison and a CLI with CI quality gates. JWT, AES-256-GCM encrypted keys, SSRF protection and 50+ tests.",["TypeScript","Fastify","SQLite","Docker","GitHub Actions"],"https://github.com/karishma9142/evalora",""],
+["Meeting-to-Action","AI meeting follow-up","Turns meeting audio and video into minutes, action items with owners and deadlines, and reminder emails using six LLM agents on Whisper. Auto-creates GitHub Issues and Trello cards.",["React","Node.js","MongoDB","Whisper","Llama 3.3"],"https://github.com/karishma9142/meeting-to-action","https://meeting-to-action-five.vercel.app/"],
+["Zoom Clone","Video meetings","Video-meeting web app inspired by Zoom, built with Next.js, TypeScript and shadcn/ui, with route protection through Next.js middleware.",["Next.js","TypeScript","shadcn/ui","Tailwind CSS"],"https://github.com/karishma9142/zoom-colne","https://zoom-colne.vercel.app"],
+["ZapChat","Chat application","Chat application split into a dedicated client and server, with the backend deployed on Vercel, covering messaging flows between users.",["JavaScript","Node.js","Vercel"],"https://github.com/karishma9142/ZapChat",""]];
+$('pcs').innerHTML=P.map(function(p,i){return '<article class="pc rv" style="--i:'+i+'"><div class="pcl"><div><span class="mono">0'+(i+1)+' — '+p[1]+'</span><h3 class="met">'+p[0]+'</h3><p>'+p[2]+'</p></div><div><div class="tg">'+p[3].map(function(t){return '<span>'+t+'</span>'}).join('')+'</div><div class="lk" style="margin-top:22px"><a href="'+p[4]+'" target="_blank" rel="noopener">Source ↗</a>'+(p[5]?'<a href="'+p[5]+'" target="_blank" rel="noopener">Live demo ↗</a>':'')+'</div></div></div><div class="pcv">'+vis(i)+'</div></article>'}).join('');
+var S=[["Languages","C,C++,JavaScript,TypeScript,SQL,HTML,CSS"],["Frameworks","React.js,Next.js,Node.js,Express.js,Fastify,Prisma,Tailwind CSS"],["Databases","PostgreSQL,MySQL,MongoDB,SQLite,Redis"],["DevOps & Cloud","Docker,GitHub Actions,Microservices,RabbitMQ,AWS EC2/S3,Linux,Render,Vercel,Git"],["Real-time & Tools","WebSocket,Socket.IO,Postman,VS Code"],["AI / LLM","Prompt Engineering,Multi-Agent Pipelines,LLM-as-Judge,Whisper,Llama 3.3,Groq,Structured JSON,Regression Testing"]];
+$('sg').innerHTML=S.map(function(s){return '<div class="card"><h3>'+s[0]+'</h3><ul>'+s[1].split(',').map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></div>'}).join('');
+var A=[["GeeksforGeeks","Global Rank 5750 · College Rank 6 · Score 2300+","https://www.geeksforgeeks.org/user/karishmacair47050/"],["LeetCode","500+ problems solved","https://leetcode.com/u/karishmakumari/"],["Codeforces","Max rating 649","https://codeforces.com/profile/karishmakumari"],["CodeChef","Max rating 1409","https://www.codechef.com/users/karishmakumari"]];
+$('ac').innerHTML=A.map(function(a){return '<a class="card" href="'+a[2]+'" target="_blank" rel="noopener"><h3>'+a[0]+'<span>↗</span></h3><p>'+a[1]+'</p></a>'}).join('');
+document.addEventListener('pointermove',function(e){var c=e.target.closest&&e.target.closest('.card');if(c){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')}});
+function count(n){var to=+n.dataset.n,d=+n.dataset.d||0,s=n.dataset.s||'',st=performance.now();(function f(t){var p=Math.min((t-st)/1500,1);n.textContent=(to*(1-Math.pow(1-p,3))).toFixed(d)+(p===1?s:'');if(p<1)requestAnimationFrame(f)})(st)}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');e.target.querySelectorAll('[data-n]').forEach(count);io.unobserve(e.target)}})},{threshold:.08});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+var cv=$('cv'),x=cv.getContext('2d'),W,H,N=[],M={x:-999,y:-999},run=true,rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function size(){var d=Math.min(devicePixelRatio||1,2),r=cv.getBoundingClientRect();W=r.width;H=r.height;cv.width=W*d;cv.height=H*d;x.setTransform(d,0,0,d,0,0);var c=Math.min(120,Math.floor(W*H/12000));N=[];for(var i=0;i<c;i++)N.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35})}
+function draw(){x.clearRect(0,0,W,H);for(var i=0;i<N.length;i++){var a=N[i];if(!rm){a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>W)a.vx*=-1;if(a.y<0||a.y>H)a.vy*=-1}
+for(var j=i+1;j<N.length;j++){var b=N[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.sqrt(dx*dx+dy*dy);if(d<125){x.strokeStyle='rgba(255,255,255,'+(.14*(1-d/125))+')';x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke()}}
+var mx=a.x-M.x,my=a.y-M.y,md=Math.sqrt(mx*mx+my*my);if(md<170){x.strokeStyle='rgba(255,255,255,'+(.5*(1-md/170))+')';x.beginPath();x.moveTo(a.x,a.y);x.lineTo(M.x,M.y);x.stroke();if(!rm){a.x+=mx*.004;a.y+=my*.004}}
+x.fillStyle='rgba(255,255,255,'+(md<170?.9:.4)+')';x.beginPath();x.arc(a.x,a.y,1.4,0,6.3);x.fill()}
+if(run&&!rm)requestAnimationFrame(draw)}
+size();draw();addEventListener('resize',function(){size();if(rm)draw()});
+$('top').addEventListener('pointermove',function(e){var r=cv.getBoundingClientRect();M.x=e.clientX-r.left;M.y=e.clientY-r.top});
+$('top').addEventListener('pointerleave',function(){M.x=M.y=-999});
+new IntersectionObserver(function(e){var v=e[0].isIntersecting;if(v&&!run&&!rm){run=true;draw()}run=v}).observe($('top'));
+</script>
+</body>
+</html>
